@@ -22,14 +22,14 @@ function userSignedOutResponse(req,res) {
 function userNotFoundResponse(req,res) {
     return res.status(404).json({
         success: false,
-        message: 'usuario no encontrado'
+        message: 'Usuario no encontrado'
     })
 }
 
 function mustSignInResponse(req,res) {
     return res.status(400).json({
         success: false,
-        message: 'Por favor registrate!'
+        message: 'Por favor, registrese con un correo!'
     })
 }
 
@@ -43,7 +43,7 @@ function invalidCredentialsResponse(req,res) {
 function verifyResponse(req,res) {
     return res.status(401).json({
         success: false,
-        message: 'Por favor, verifica tu cuenta de email y proba de nuevo!'
+        message: 'Por favor, verifica tu correo electrónico y volvé a intentar!'
     })
 }
 
